@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int N;
+    printf("Nhap N: ");
+    scanf("%d", &N);
+
+    long long S = 0; 
+    for (int i = 1; i <= N; i++) {
+        
+        char NN[20]; 
+        sprintf(NN, "%d%d", i, i); 
+        S += atoll(NN); 
+    }
+
+    printf("S = %lld\n", S); 
+    return 0;
+}
